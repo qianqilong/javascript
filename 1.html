@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>1122</div>
+    <script>
+        /*
+        click	鼠标单击事件，同时触发 mousedown/mouseup
+        dblclick	鼠标双击事件
+        contextmenu	点击右键后显示的所在环境的菜单
+        mousedown	鼠标按下
+        mouseup	鼠标抬起时
+        mousemove	鼠标移动时
+        mouseover	鼠标移动时
+        mouseout	鼠标从元素上离开时
+        mouseup	鼠标抬起时
+        mouseenter	鼠标移入时触发，不产生冒泡行为
+        mosueleave	鼠标移出时触发，不产生冒泡行为
+        copy	复制内容时触发
+        scroll	元素滚动时，可以为元素设置 overflow:auto; 产生滚动条来测试
+        */
+        document.addEventListener('copy', () => {
+            event.preventDefault()
+            alert('禁止复制内容')
+        })
+    </script>
+</body>
+
+</html>
